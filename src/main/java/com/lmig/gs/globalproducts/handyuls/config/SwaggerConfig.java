@@ -2,16 +2,15 @@
 /*
  * Copyright (C) 2018, Liberty Information Technology
  *
- * Created on 04/16/2018
+ * Created on 04/11/2019
  *
  */
 
-package uk.co.lit.academy.todolist.config;
+package com.lmig.gs.globalproducts.handyuls.config;
 
 import com.google.common.base.Predicates;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
@@ -30,31 +29,31 @@ import java.util.Collections;
 @EnableSwagger2
 public class SwaggerConfig {
 
-	/**
-	 * Creates a docket, used by swagger to document apis.
-	 *
-	 * @return socket, used by swagger to document apis
-	 */
-	@Bean
-	public Docket api() {
-		return new Docket(DocumentationType.SWAGGER_2)
-				.select()
-				.apis(RequestHandlerSelectors.basePackage("uk.co.lit.academy.todolist"))
-				.paths(Predicates.not(PathSelectors.regex("/error")))
-				.paths(PathSelectors.any())
-				.build()
-				.apiInfo(apiInfo());
-	}
+    /**
+     * Creates a docket, used by swagger to document apis.
+     *
+     * @return socket, used by swagger to document apis
+     */
+    @Bean
+    public Docket api() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.lmig.gs.globalproducts.handyuls"))
+                .paths(Predicates.not(PathSelectors.regex("/error")))
+                .paths(PathSelectors.any())
+                .build()
+                .apiInfo(apiInfo());
+    }
 
-	private ApiInfo apiInfo() {
-		return new ApiInfo(
-				"Todo List REST Documentation",
-				"This is a documentation about a fantastical Todo List Service.",
-				"API 1.0",
-				"Terms of service",
-				new Contact("LIT Academy Initiative",
-						"https://LIT.academy.co.uk",
-						"litAcademyInitiative@LibertyMutual.com"),
-				"License of API", "API license URL", Collections.<VendorExtension>emptyList());
-	}
+    private ApiInfo apiInfo() {
+        return new ApiInfo(
+                "Handyurls REST Documentation",
+                "This is a documentation about an app that allows getUsers to create, retrieve, update, and search their useful urls.",
+                "API 1.0",
+                "Terms of service",
+                new Contact("LIT Academy Initiative",
+                        "https://Liberty-it.co.uk",
+                        "litAcademyInitiative@LibertyMutual.com"),
+                "License of API", "API license URL", Collections.<VendorExtension>emptyList());
+    }
 }
