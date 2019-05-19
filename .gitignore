@@ -169,6 +169,6 @@ gradle-app.setting
 .DS_Store
 src/.DS_Store
 src/main/deployment/*
-src/main/deployment/
+src/main/deployment/cloudformation/*.*
 
 # End of https://www.gitignore.io/api/maven,gradle,eclipse,intellij
