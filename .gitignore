@@ -168,6 +168,6 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 .DS_Store
 src/.DS_Store
-src/main/deployment
+src/main/deployment/
 
 # End of https://www.gitignore.io/api/maven,gradle,eclipse,intellij
