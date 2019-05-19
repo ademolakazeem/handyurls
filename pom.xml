@@ -104,11 +104,11 @@
                       </goals>
                   </execution>
               </executions>
-              <configuration>
+           <!--   <configuration>
                   <descriptors>
                       <descriptor>src/assembly/dist.xml</descriptor>
                   </descriptors>
-              </configuration>
+              </configuration>-->
             </plugin>
 
             <plugin>
