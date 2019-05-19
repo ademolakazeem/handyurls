@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.lmig.liberty-it.lit-up</groupId>
+	<groupId>com.verdeinfotech</groupId>
     <artifactId>handyurls</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -11,12 +11,6 @@
     <description>
         This project helps users create, view,search and update their favourite URLs for future use.
     </description>
-
-    <!-- <parent>
-         <groupId>com.lmig.gs</groupId>
-         <artifactId>gs-organization</artifactId>
-         <version>1.0</version>
-     </parent>-->
 
     <parent>
         <groupId>org.springframework.boot</groupId>
